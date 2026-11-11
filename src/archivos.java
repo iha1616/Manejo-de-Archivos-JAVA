@@ -7,22 +7,7 @@ public class archivos {
         String nombreArchivo = "./poema.txt";
         Scanner leer = new Scanner(System.in);
 
-        /*try (BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo))){
-            bw.write("Linea 1: Juan Muñoz - Ingenieria\n");
-            bw.write("Linea 2: Juan Cardona - Software");
-            System.out.println("Archivo creado y escrito con exito.");
-        } catch (IOException e){
-            System.out.println("Error al escribir: "+ e.getMessage());
-        }
-
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo, true))) {
-            bw.write("\nLinea 3: Carlos Ruiz - Sistemas (Añadido)");
-            System.out.println("Archivo creado y escrito con exito.");
-        }catch (IOException e){
-            System.out.println("Error al escribir: "+ e.getMessage());
-        }
-
-       */ System.out.println("\n---Contenido del archivo con Filewriter---");
+        System.out.println("\n---Contenido del archivo con Filewriter---");
         try(FileReader fr = new FileReader("./poema.txt")){
             int i;
             int cont = 0;
